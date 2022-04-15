@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="1.jpg" height="500" width="500" id="img" onclick="change()"/>
+</body>
+</html>
+<script>
+    let count = 1;
+    function change() {
+        if (count ===1) {
+            document.getElementById("img").src = "2.jpg"
+            count = 2;
+        } else {
+            document.getElementById("img").src = "1.jpg"
+            count = 1;
+        }
+    }
+</script>

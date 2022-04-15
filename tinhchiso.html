@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Cân nặng</h3><input id="no1" name="text">
+<h3>Chiều cao</h3><input id="no2" name="text">
+<p><button type="button" onclick="tinh()">Đo </button></p>
+</body>
+<script>
+    function tinh() {
+        let bmi=0
+        let a=document.getElementById("no1").value
+        let b=document.getElementById("no2").value
+        bmi = a/(b*b)
+        if (bmi < 18)
+            document.write("Underweight");
+        else if (bmi < 25.0)
+            document.write("Normal");
+        else if (bmi < 30.0)
+            document.write("Overweight");
+        else
+            document.write("Obese");
+    }
+</script>
+</html>
