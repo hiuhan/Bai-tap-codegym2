@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0 , b = 0, c = 0;
+    let chia5 = "";
+    let fibonacci = "";
+    for (let i=0; i<20;i++) {
+        if (i==0) {
+            a = 1, c = 1;
+            fibonacci += a+ " ";
+        } else {
+
+            a = b + c;
+            b = c;
+            c = a;
+            fibonacci += a+ " ";
+            console.log(i +" = "+a);
+            if(a%5==0) {
+                chia5 = a;
+                break;
+            }
+        }
+    }
+
+    document.write("Số đầu tiên trong dãy fibonacci chia hết cho 5 là " + chia5)
+        </script>
+</html>
