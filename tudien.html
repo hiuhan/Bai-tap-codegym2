@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TỪ ĐIỂN CỦA HIUHAN</title>
+</head>
+<style >
+    form {text-align: center; background: coral}
+</style>
+<body>
+<form>
+    <h1> TỪ ĐIỂN CỦA HIUHAN</h1>
+    <input type="text" id="input" oninput="dich()"/>
+    <p>Có nghĩa là: <span id="display"></span></p>
+</form>
+<script>
+    let a =['','car','pen','bag','shoe','clothes','eyes','sound','music','the most beautiful girl on the earth'];
+    let b =['', 'ô tô','bút','cặp','giày','quần áo','mắt','âm thanh','nhạc','Trangteeeeeeeeee'];
+    function dich() {
+    let word = document.getElementById('input').value;
+    for (let i = 0; i <a.length; i++) {
+        if (word === a[i]) document.getElementById('display').innerHTML=b[i]
+    }
+    }
+
+</script>
+</body>
+</html>
